@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  color: #fff;
+}
+
+.landing {
+  background-color: #1a50b3;
+  z-index: 1;
+  /* background: #4776E6;
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    background: linear-gradient(to right, #8E54E9, #4776E6); */
+}
+
+#particles-js {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 65px;
+  color: white;
+  font-weight: 500;
+}
+
+.lanidng__heading-block--1 {
+  font-family: 'Open Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  animation: show-in-h1 2s;
+}
+
+.navbar {
+  background-color: #1a50b3;
+}
+
+.navbar-item {
+  color: #fff;
+}
+
+@keyframes show-in-h1 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+a {
+  color: #c1c7c6;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+}
