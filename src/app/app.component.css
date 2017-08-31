@@ -42,11 +42,16 @@ h1 {
 }
 
 .navbar {
-  background-color: #1a50b3;
+  /* background-color: #0850D4; */
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 2px 2px 5px #888888;
+  background-color: #FAFAFA;
 }
 
 .navbar-item {
-  color: #fff;
+  /* color: #fff; */
 }
 
 @keyframes show-in-h1 {
@@ -58,13 +63,8 @@ h1 {
   }
 }
 
-p {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-a {
-  color: #c1c7c6;
+.landing p {
+    color: #fff;
 }
 
 .cryptedmail:after {
