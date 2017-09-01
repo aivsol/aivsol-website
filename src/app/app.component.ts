@@ -10,6 +10,7 @@ declare var particlesJS: any;
 
 export class AppComponent implements OnInit {
   title = 'app';
+  isActive = false;
 
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/particles.json', null);

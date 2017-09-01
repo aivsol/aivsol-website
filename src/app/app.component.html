@@ -6,23 +6,23 @@
       <h2>AIVSOL</h2>
     </a>
 
-    <div class="navbar-burger burger" data-target="navMenuTransparentExample">
+    <div class="navbar-burger burger" (click)="isActive = !isActive" [class.is-active]="isActive" data-target="navMenuTransparentExample">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navMenuTransparentExample" class="navbar-menu">
+  <div id="navMenuTransparentExample" [class.is-active]="isActive" class="navbar-menu">
     <div class="navbar-start">
 
     </div>
 
     <div class="navbar-end">
-      <a class="navbar-item " href="#">
+      <a pageScroll class="navbar-item" href="#services">
           Services
         </a>
-      <a class="navbar-item " href="#">
+      <a pageScroll class="navbar-item" href="#products">
           Products
         </a>
     </div>
@@ -45,14 +45,14 @@
     </div>
   </div>
 </div>
-<section class="section">
+<section id="services" class="section">
   <div class="container">
     <div class="content">
-      <h1>Hello World</h1>
+      <h1 class="has-text-centered">Services</h1>
       <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend
         gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin
         vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
-      <h2>Second level</h2>
+      <!-- <h2>Second level</h2> -->
       <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet
         commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus
         dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -62,7 +62,7 @@
         <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
         <li>Ut non enim metus.</li>
       </ul>
-      <h3>Third level</h3>
+      <!-- <h3>Third level</h3> -->
       <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor
         nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol>
@@ -74,8 +74,13 @@
         <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
         <li>Vivamus maximus ultricies pulvinar.</li>
       </ol>
-      <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet
-        turpis.</blockquote>
+    </div>
+  </div>
+</section>
+<section id="products" class="section">
+  <div class="container">
+    <div class="content">
+      <h1 class="has-text-centered">Products</h1>
       <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices
         lacus quis neque consectetur, et lobortis nisi molestie.</p>
       <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum
@@ -91,19 +96,6 @@
       <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada
         nulla. Nulla facilisi. Nullam ac erat ante.</p>
       <h4>Fourth level</h4>
-      <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum
-        ex efficitur.</p>
-      <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello World&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
       <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris
         eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
       <table>
@@ -161,27 +153,10 @@
   </div>
 </section>
 <!-- <div class="hero-body">
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-8 is-offset-2">
-                <h1>Intelligent automotive software</h1>
-            </div>
-            <div class="column is-8 is-offset-2">
-                <p>
-                    We build intelligent software solutions for enhancing in-vehicle experience and preventing crashes.
-                </p>
-            </div>
-            <div class="column is-6 is-offset-3">
-                <p>
-                    <a class="button" routerlink="/company" href="/company">Why we do it</a>
-                </p>
-            </div>
-        </div>
-    </div>
     <p style="font-size: 14px;">
             <a data-name="hello" data-domain="aivsol" data-tld="com" href="#" class="cryptedmail" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
           </p>
-</div> -->
+         -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
