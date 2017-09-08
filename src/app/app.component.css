@@ -31,7 +31,7 @@ body {
 
 .landing h1 {
   font-size: 65px;
-  color: white;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -77,4 +77,29 @@ body {
   .landing h1 {
       font-size: 45px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing h1 {
+      font-size: 45px;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+  .services__list {
+    font-size: 26px; 
+  }
+}
+
+.services__cube-img {
+  height: 80%;
+  margin: 0 auto;
+}
+
+.services__list-unstyled {
+  list-style: none;
+}
+
+.title {
+  text-transform: uppercase;
 }
