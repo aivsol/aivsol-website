@@ -103,3 +103,15 @@ body {
 .title {
   text-transform: uppercase;
 }
+
+.footer-map {
+  background-image: url('../assets/map.png');
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__text-offset {
+  width: 70%;
+  margin: 0 auto;
+}
