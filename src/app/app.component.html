@@ -48,73 +48,42 @@
     </div>
   </div>
 </div>
-<section id="services" class="services hero">
+<section id="services" class="services hero is-fullheight">
   <div class="hero-body">
     <div class="container">
-        <h1 class="has-text-centered title">Services</h1>
-        <div class="columns">
-          <div class="column services__list">
-            <ul class="services__list-unstyled">
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-assistive-listening-systems"></i>
+      <h1 class="has-text-centered title">Services</h1>
+      <div class="columns">
+        <!-- left -->
+        <div class="column">
+          <article class="media" *ngFor="let service of (services ? services.slice(0,4): []);">
+            <figure class="media-left">
+              <p class="image services__icon-wrapper">
+                <span class="icon is-large">
+                  <i class="fa fa-{{service.icon}}"></i>
                 </span>
-                <span>Advanced Driver Assistance Systems</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-play-circle"></i>
-                </span>
-                <span>In-Vehicle Infotainment</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-code"></i>
-                </span>
-                <span>Vehicle Software Development</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-server"></i>
-                </span>
-                <span>Autonomous Driving Addons</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-car"></i>
-                </span>
-                <span>Car As A Service</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-cubes"></i>
-                </span>
-                <span>Smart Manufacturing</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-database"></i>
-                </span>
-                <span>Vehicle Data Collection</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-bar-chart"></i>
-                </span>
-                <span>Data Analytics</span>
-              </li>
-              <li>
-                <span class="icon is-medium">
-                  <i class="fa fa-tags"></i>
-                </span>
-                <span>Automated Data Labelling</span>
-              </li>
-            </ul>
-          </div>
-          <div class="column is-hidden-touch has-text-centered">
-            <img src="../assets/sedan-car-front.svg" class="services__cube-img" />
-          </div>
+              </p>
+            </figure>
+            <div class="media-content">
+              <span class="services__title">{{service.title}}</span>
+            </div>
+          </article>
         </div>
+        <!-- right -->
+        <div class="column">
+          <article class="media" *ngFor="let service of (services ? services.slice(4,8): []);">
+            <figure class="media-left">
+              <p class="image services__icon-wrapper">
+                <span class="icon is-large">
+                  <i class="fa fa-{{service.icon}}"></i>
+                </span>
+              </p>
+            </figure>
+            <div class="media-content">
+              <span class="services__title">{{service.title}}</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -206,20 +175,18 @@
       <div class="columns">
         <div class="column">
           <p>
-              <b>Aivsol GmbH</b><br>
-              Endelhauserstraße 2<br>
-              80686 München<br>
-              Germany
-            </p>
+            <b>Aivsol GmbH</b><br> Endelhauserstraße 2<br> 80686 München<br> Germany
+          </p>
         </div>
         <div class="column">
-            <p>
-                <!-- <a class="icon" href="https://github.com/jgthms/bulma">
+          <p>
+            <!-- <a class="icon" href="https://github.com/jgthms/bulma">
                   <i class="fa fa-github"></i>
                 </a> -->
-                <!-- <a href="mailto:hello@aivsol.com" class="button is-info is-outlined is-large">Send us an email</a> -->
-                <a data-name="hello" data-domain="aivsol" data-tld="com" href="#" class="cryptedmail button is-info is-outlined is-large" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
-              </p>
+            <!-- <a href="mailto:hello@aivsol.com" class="button is-info is-outlined is-large">Send us an email</a> -->
+            <a data-name="hello" data-domain="aivsol" data-tld="com" href="#" class="cryptedmail button is-info is-outlined is-large"
+              onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+          </p>
         </div>
       </div>
     </div>
