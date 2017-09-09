@@ -100,6 +100,18 @@ body {
   list-style: none;
 }
 
+.services__section-title {
+  text-transform: uppercase;
+}
+
+.services__section-description {
+  margin-bottom: 70px; // TOOD: fix for mobile
+}
+
+.services__list-item {
+  margin-top: 2rem; // TOOD: fix for mobile
+}
+
 .services__icon-wrapper {
   border:1px solid #0853da;
   -webkit-border-radius: 5px;
@@ -122,9 +134,9 @@ body {
   height: 70px;
  }
 
- .services__title {
-   font-size: 25px;
- }
+.services__list-title {
+  font-size: 25px;
+}
 
 .title {
   text-transform: uppercase;

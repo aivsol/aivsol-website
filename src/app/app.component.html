@@ -51,11 +51,12 @@
 <section id="services" class="services hero is-fullheight">
   <div class="hero-body">
     <div class="container">
-      <h1 class="has-text-centered title">Services</h1>
+      <h1 class="has-text-centered title services__section-title">Services</h1>
+      <p class="services__section-description">We combine deep learning and computer vision techniques to build advanced and intelligent automotive solutions. We are a team of highly skilled engineers and scientists passionate about understanding the world around us and making it a better and safe palce to live.</p>
       <div class="columns">
         <!-- left -->
         <div class="column">
-          <article class="media" *ngFor="let service of (services ? services.slice(0,4): []);">
+          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(0,4): []);">
             <figure class="media-left">
               <p class="image services__icon-wrapper">
                 <span class="icon is-large">
@@ -64,13 +65,13 @@
               </p>
             </figure>
             <div class="media-content">
-              <span class="services__title">{{service.title}}</span>
+              <span class="services__list-title">{{service.title}}</span>
             </div>
           </article>
         </div>
         <!-- right -->
         <div class="column">
-          <article class="media" *ngFor="let service of (services ? services.slice(4,8): []);">
+          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(4,8): []);">
             <figure class="media-left">
               <p class="image services__icon-wrapper">
                 <span class="icon is-large">
@@ -79,7 +80,7 @@
               </p>
             </figure>
             <div class="media-content">
-              <span class="services__title">{{service.title}}</span>
+              <span class="services__list-title">{{service.title}}</span>
             </div>
           </article>
         </div>
@@ -170,7 +171,7 @@
 <footer class="footer footer-map" id="contact">
   <div class="container">
     <div class="content footer__text-offset">
-      <h1 class="has-text-centered">Contact</h1>
+      <h1 class="has-text-centered title">Contact</h1>
       <p>If you are interested in any of our services or just want to say hi, please stop by or send us an email.</p>
       <div class="columns">
         <div class="column">
