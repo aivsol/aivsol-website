@@ -23,7 +23,7 @@
           Services
         </a>
       <a pageScroll class="navbar-item" href="#products">
-          Products
+          Semi-Auto Data Labelling
       </a>
       <a pageScroll class="navbar-item" href="#contact">
           Contact
@@ -56,7 +56,7 @@
       <div class="columns">
         <!-- left -->
         <div class="column">
-          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(0,4): []);">
+          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(0,3): []);">
             <figure class="media-left">
               <p class="image services__icon-wrapper">
                 <span class="icon is-large">
@@ -71,7 +71,7 @@
         </div>
         <!-- right -->
         <div class="column">
-          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(4,8): []);">
+          <article class="media services__list-item" *ngFor="let service of (services ? services.slice(3,6): []);">
             <figure class="media-left">
               <p class="image services__icon-wrapper">
                 <span class="icon is-large">
@@ -88,79 +88,46 @@
     </div>
   </div>
 </section>
+<hr style="margin-bottom: 0;">
 <section id="products" class="section">
   <div class="container">
-    <div class="content">
-      <h1 class="has-text-centered">Products</h1>
-      <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices
-        lacus quis neque consectetur, et lobortis nisi molestie.</p>
-      <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum
-        interdum commodo.</p>
-      <dl>
-        <dt>Web</dt>
-        <dd>The part of the Internet that contains websites and web pages</dd>
-        <dt>HTML</dt>
-        <dd>A markup language for creating web pages</dd>
-        <dt>CSS</dt>
-        <dd>A technology to make HTML look better</dd>
-      </dl>
-      <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada
-        nulla. Nulla facilisi. Nullam ac erat ante.</p>
-      <h4>Fourth level</h4>
-      <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris
-        eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>One</th>
-            <th>Two</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Three</td>
-            <td>Four</td>
-          </tr>
-          <tr>
-            <td>Five</td>
-            <td>Six</td>
-          </tr>
-          <tr>
-            <td>Seven</td>
-            <td>Eight</td>
-          </tr>
-          <tr>
-            <td>Nine</td>
-            <td>Ten</td>
-          </tr>
-          <tr>
-            <td>Eleven</td>
-            <td>Twelve</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam
-        iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo
-        vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc
-        neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium
-        metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-      <h5>Fifth level</h5>
-      <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet
-        ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed
-        nec eleifend justo. Nam et sollicitudin odio.</p>
-      <figure>
-        <img src="http://bulma.io/images/placeholders/256x256.png">
-        <img src="http://bulma.io/images/placeholders/256x256.png">
-        <figcaption>
-          Figure 1: Some beautiful placeholders
-        </figcaption>
-      </figure>
-      <h6>Sixth level</h6>
-      <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan.
-        Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices
-        turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor
-        maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
-    </div>
+      <div class="content">
+        <h1 class="title has-text-centered demo_section-title">AI based Semi-Auto Data Labelling</h1>
+        <div class="columns">
+          <div class="column">
+              <br class="is-hidden-touch"/>
+              <h3 class="title is-3">Create clean datasets and make your machine learning work more successful</h3>
+              <ul>
+                  <li>24/7 AI/DL based Semi-Auto online Data labeling</li>
+                  <li>24/7 Humans in the loop</li>
+                  <li>Pixel Level Accuracy</li>
+                  <li>Low Cost</li>
+                  <li>Cloud Based</li>
+                  <li>Version Controlling</li>
+              </ul>
+              <a (click)="demo_tab = 5" class="button is-info is-outlined is-medium">Our Labelling Tool Demo &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="column">
+                    <div class="tabs is-centered">
+                        <ul class="demo__tab-list">
+                          <li class="tab__fix-border" (click)="demo_tab = 1" [ngClass]="{'is-active' : demo_tab === 1}"><a>Vehicle Detection</a></li>
+                          <li (click)="demo_tab = 2" [ngClass]="{'is-active' : demo_tab === 2}"><a>Sign Detection</a></li>
+                          <li (click)="demo_tab = 3" [ngClass]="{'is-active' : demo_tab === 3}"><a>Depth Map</a></li>
+                          <li (click)="demo_tab = 4" [ngClass]="{'is-active' : demo_tab === 4}"><a>Lane Detection</a></li>
+                        </ul>
+                      </div>
+                      <div class="demo_videos">
+                          <div class="videowrapper">
+                            <iframe *ngIf="demo_tab === 1" src="http://youtube.com/embed/UiYitMJDO3c?autoplay=0&color=white&rel=0&showinfo=0&showsearch=0&theme=light" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe *ngIf="demo_tab === 2" src="http://youtube.com/embed/asCGrKkVog0?autoplay=1&color=white&rel=0&showinfo=0&showsearch=0&theme=light" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe *ngIf="demo_tab === 3" src="http://youtube.com/embed/Kh7dpSR8LCc?autoplay=1&color=white&rel=0&showinfo=0&showsearch=0&theme=light" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe *ngIf="demo_tab === 4" src="http://youtube.com/embed/6yO9qJkQXcI?autoplay=1&color=white&rel=0&showinfo=0&showsearch=0&theme=light" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                            <iframe *ngIf="demo_tab === 5" src="http://youtube.com/embed/WJ55A2hLjGo?autoplay=1&color=white&rel=0&showinfo=0&showsearch=0&theme=light" width="560" height="315" frameborder="0" allowfullscreen=""></iframe>
+                          </div>
+                      </div>
+          </div>
+        </div>
+      </div>
   </div>
 </section>
 <!-- <div class="hero-body">
@@ -176,7 +143,7 @@
       <div class="columns">
         <div class="column">
           <p>
-            <b>Aivsol GmbH</b><br> Endelhauserstraße 2<br> 80686 München<br> Germany
+            <b>Aivsol</b><br> Hilblestraße 36<br> 80686 München<br> Germany
           </p>
         </div>
         <div class="column">

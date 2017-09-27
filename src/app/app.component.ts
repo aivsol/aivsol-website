@@ -17,12 +17,13 @@ export class AppComponent implements OnInit {
   title = 'app';
   isActive = false;
   services: IServices[] = [];
+  demo_tab = 1;
 
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/particles.json', null);
     this.services.push(
-      {icon: 'assistive-listening-systems', title: 'Advanced Driver Assistance Systems'},
-      {icon: 'play', title: 'In-Vehicle Infotainment'},
+      // {icon: 'assistive-listening-systems', title: 'Advanced Driver Assistance Systems'},
+      // {icon: 'play', title: 'In-Vehicle Infotainment'},
       {icon: 'code', title: 'Vehicle Software Development'},
       {icon: 'server', title: 'Autonomous Driving Addons'},
       {icon: 'car', title: 'Car As A Service'},
